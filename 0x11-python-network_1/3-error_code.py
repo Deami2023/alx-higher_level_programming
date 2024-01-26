@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Manages urllib.error.HTTPError exceptions and print: Error code:
+"""Manages urllib.error.HTTPError exceptions and print:
+Error code:
 """
 
 if __name__ == "__main__":

@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-
-"""Module find a peak in a list of unsorted integers."""
+"""Algorithms for list of integers."""
 
 
 def find_peak(list_of_integers):
-    """ Class find a peak in a list of integers"""
+        """Finds a peak in a list of unsorted integers."""
+            if list_of_integers:
+                        list_of_integers.sort(reverse=True)
+                                return list_of_integers[0]

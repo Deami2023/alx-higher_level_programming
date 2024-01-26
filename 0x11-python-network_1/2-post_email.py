@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Takes in a URL and an email, sends a POST request"""
+"""Take a URL and an email, sends a POST request"""
 
 if __name__ == "__main__":
     import urllib.request

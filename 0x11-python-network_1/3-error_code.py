@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-
-"""Takes in a URL and an email, sends a POST request"""
-
+"""Manages urllib.error.HTTPError exceptions and print: Error code:
+"""
 if __name__ == "__main__":
-    import urllib.request
-    import urllib.parse
     import sys
+    import urllib.error
+    import urllib.request
+
 
     url = sys.argv[1]
-    email = sys.argv[2]
 
-    data = urllib.parse.urlencode({'email': email})
-    data = data.encode('ascii')
-
-    with urllib.request.urlopen(url, data) as response:
-        print(response.read().decode('utf-8'))
+    request = urllib.request.Request(url)
+    try:
+        with urllib.request.urlopen(request) as response:
+            print(response.read().decode("ascii"))
+    except urllib.error.HTTPError as e:
+        print("Error code: {}".format(e.code))

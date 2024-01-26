@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""
-takes in a URL and an email address, 
-sends a POST request
-"""
-
-if __name__ == '__main__':
+"""takes in a URL and an email address, sends a POST request"""
 import requests
 import sys
 
+if __name__ == '__main__':
     url = sys.argv[1]
     email = {'email': sys.argv[2]}
 

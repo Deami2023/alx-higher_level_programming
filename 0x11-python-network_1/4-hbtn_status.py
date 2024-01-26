@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""Gets https://intranet.hbtn.io/status"""
+"""
+Gets https://intranet.hbtn.io/status
+"""
 
 import requests
 
